@@ -41,3 +41,13 @@ section:only-child {
     background-color: whitesmoke;
     color: darkslategray;
 }
+
+/* Flexbox lays out content based on their content width   */
+
+section{
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 200px;
+/* flex-basis is the preferred width while allowing growing and shrinking */
+    flex: 0 1 200px; /* shorthand for all three properties- grow, shrink, and basis */
+}
